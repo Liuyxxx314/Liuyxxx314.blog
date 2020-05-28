@@ -3,121 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <title> 刘本氚大作 </title>
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+</script>
     <style type="text/css">
-        h1 {color:red;}
-        p {color:lightpink; text-align:center;}
-            body
+        body
         {
-        font-size:75%;
-        font-family:verdana,arial,'sans serif';
-        background-color:#FFFFF0;
-        color:#000080;
-        margin:10px;
+            background-color:whitesmoke;
+            /*background-image:url('1.png');*/
+            background-repeat:repeat-x;
         }
 
-        h1 {font-size:200%;}
-        h2 {font-size:140%;}
-        h3 {font-size:110%;}
+        .container
+        {
+            text-align:center;
+        }
 
-        th {background-color:#ADD8E6;}
+        .center_div
+        {
+            border:2px solid gray;
+            border-radius:25px;
+            margin-left:auto;
+            margin-right:auto;
+            width:90%;
+            background-color: gainsboro;
+            text-align:left;
+            padding:8px;
+        }
+        .mono_div
+        {
+            width: 300px;
+            padding: 25px;
+            margin: 25px;
+            border: 2px dotted;
+            border-radius:25px;
+        }
 
-        ul {list-style:circle;}
-        ol {list-style:upper-roman;}
 
-        a:link {color:#000080;}
-        a:hover {color:red;}
+        hr
+        {
+            color: #ffb9b9;
+        }
+
+        h1
+        {
+            color: black;
+            font-size:40pt;
+            /*text-align: center;*/
+        }
+        h2
+        {
+            font-size:15pt;
+            color: salmon;
+        }
+
+        h3 {font-size:200%;}
+
+
+        p
+        {
+            /*outline:green dotted thick;*/
+            color: darkgrey;
+            text-align:center;
+            margin-left:20px;
+            font-family:"Times New Roman", Times, serif;
+        }
+
+
+
+
+        table
+        {
+            width:80%;
+        }
+        th
+        {
+            height:50px;
+            text-align: center;
+        }
+        td
+        {
+            text-align:center;
+        }
+
+        ul
+        {
+            list-style:circle;
+            /*text-align: center*/
+        }
+        /*ol*/
+        /*{*/
+        /*    list-style:upper-roman;*/
+        /*    text-align: center*/
+        /*}*/
+
+        /*li*/
+        /*{*/
+        /*    text-align: center*/
+        /*}*/
+        a.one:link {color:#000000;}      /* 未访问链接*/
+        a.one:visited {color: rebeccapurple;}  /* 已访问链接 */
+        a.one:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+        a.one:active {color:#0000FF;}  /* 鼠标点击时 */
+        a.two:link {color:#ff0000;}
+        a.two:visited {color:rebeccapurple;}
+        a.two:hover {font-size:150%;color:#FF00FF }
+        a.two:active {color:#0000FF;}
+
     </style>
 </head>
 
 
 <body>
+    <div class="container">
+    <div class="center_div">
 
-<h1 style="text-align:center;">Hello world</h1>
+    <h1>Hello world !!!</h1>
+    <div class="mono_div">
+        <h2><b> mono: </b></h2>
+        <p1> 闲言碎语 </p1><br>
+        <p1> 无言无语 </p1><br>
+<!--        <p1> 欢迎留言（此功能即将开通） </p1><br>-->
+        <p1> 没事来逛逛 </p1><br>
+        <button type="button" onclick="alert('此功能暂未开放哈哈哈哈哈哈哈')">点击留言</button>
 
-<h2> 舒永康别看我代码 ！！！！</h2>
-    <p1>chapter 1 这是第一个标题的第一个段落 </p1>
-<h2>关于段落<br></h2>
-
-<p style="color:blue;margin-left:20px;">这又是一个段落。</p>
-<h2> 舒永康 别看我代码！！！ </h2>
-
-
-
-<h2> 这是一些链接 </h2>
-    <a href="https://www.baidu.com/" style="text-decoration:none;"> 百度 </a> <br>
-    <a href="https://www.github.com/" style="text-decoration:none;"> Github首页 </a> <br>
+    </div>
 
 
-<h2>关于图像 一张刘本氚证件照</h2>
-    <img src="/Users/yuxin.liu/Desktop/1.jpg" width=""> <br>
-    <p2>至于它为什么没有正常显示 我也不知道 <br></p2>
-    <p2> 几个猜想  <br></p2>
-        <ul>
-            <li>路径没对</li>
-            <li>太美了显示不出来</li>
-            <li>太美无法显示</li>
-            <li>原因二和原因三</li>
-        </ul>
-<h2>关于表格 我的下周计划表 </h2>
-    <h5> </h5>
-        <table border="2">
-            <th> Sunday </th>
-            <th> Monday </th>
-            <th> Tuesday </th>
-            <th> Wednesday </th>
-            <th> Thursday </th>
-            <th> Friday </th>
-            <th> Saturday </th>
-        <tr>
-            <td> work </td>
-            <td> work </td>
-            <td> work </td>
-            <td> work </td>
-            <td> work </td>
-            <td> work </td>
-            <td> I love my work </td>
-        </tr>
-        <tr>
-            <td>row 2, cell 1</td>
-            <td>row 2, cell 2</td>
-        </tr>
-        </table>
 
-    <h5>关于表格 加入一个无边框表格</h5>
-        <table>
-            <caption>Monthly savings</caption>
+<!--    <h2 style="color:blue;margin-left:20px;text-align: center"> 碎碎念 </h2><br>-->
 
+
+
+
+
+
+    <h2> 放些链接 看起来厉害点 </h2>
+        <a class="two" href="https://www.baidu.com/" style="text-decoration:none;"> 百度 </a> <br>
+        <a class="one" href="https://www.github.com/" style="text-decoration:none;"> Github首页 </a> <br>
+
+
+    <h2> 放个图像 一张刘本氚证件照</h2>
+        <img src="/Users/yuxin.liu/Desktop/1.jpg" > <br>
+        <p2>至于它为什么没有正常显示 我也不知道 </p2><br>
+        <p2>几个猜想</p2><br>
+            <ul>
+                <li>路径没对</li>
+                <li>太美了显示不出来</li>
+                <li>太美无法显示</li>
+                <li>原因二和原因三</li>
+            </ul>
+    <h2>做一个本周计划表: </h2>
+        <h5> </h5>
+            <table border="2">
+                <th> Sunday </th>
+                <th> Monday </th>
+                <th> Tuesday </th>
+                <th> Wednesday </th>
+                <th> Thursday </th>
+                <th> Friday </th>
+                <th> Saturday </th>
             <tr>
-                <th>Month</th>
-                <th>Savings</th>
+                <td> sleep </td>
+                <td> work </td>
+                <td> work </td>
+                <td> work </td>
+                <td> work </td>
+                <td> still work </td>
+                <td> I love my work </td>
             </tr>
+    <!--        <tr>-->
+    <!--            <td>row 2, cell 1</td>-->
+    <!--            <td>row 2, cell 2</td>-->
+    <!--        </tr>-->
+            </table>
 
-            <tr>
-                <td>January</td>
-                <td>$100</td>
-            </tr>
+    <!--    <h5>关于表格 加入一个无边框表格</h5>-->
+    <!--        <table>-->
+    <!--            <caption>Monthly savings</caption>-->
 
-            <tr>
-                <td>February</td>
-                <td>$50</td>
-            </tr>
-        </table>
+    <!--            <tr>-->
+    <!--                <th>Month</th>-->
+    <!--                <th>Savings</th>-->
+    <!--            </tr>-->
 
+    <!--            <tr>-->
+    <!--                <td>January</td>-->
+    <!--                <td>$100</td>-->
+    <!--            </tr>-->
 
-
-    <h4> 今日食谱 ：</h4>
-        <ol>
-          <li> 公司面包太好吃了 能吃一天 </li>
-          <li> 喝了公司两杯咖啡 不亏 </li>
-          <li> 中午饭还是想吃麦当劳 </li>
-        </ol>
-
-
+    <!--            <tr>-->
+    <!--                <td>February</td>-->
+    <!--                <td>$50</td>-->
+    <!--            </tr>-->
+    <!--        </table>-->
 
 
 
+        <h2> 今日食谱：</h2>
+            <ol>
+              <li> 公司面包太好吃了 能吃一天 </li>
+              <li> 喝了公司两杯咖啡 不亏 </li>
+              <li> 中午饭还是想吃麦当劳, 最后吃了香锅nice</li>
+            </ol>
+        <button type="button" onclick="displayDate()">显示日期</button>
 
-<p> designed by beautiful 刘本氚 </p>
+
+
+
+
+
+        <p> Designed by <b>Beautiful</b> 刘本氚 >3< </p>
+
+    </div>
+    </div>
 
 
 </body>
